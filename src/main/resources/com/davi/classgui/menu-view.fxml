@@ -6,20 +6,20 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.davi.classgui.controllers.MenuController">
    <children>
       <Button layoutX="145.0" layoutY="140.0" mnemonicParsing="false" onAction="#toBike" text="Bike" />
-      <!--<Button layoutX="269.0" layoutY="140.0" mnemonicParsing="false" onAction="#toBook" text="Book" />
+      <Button layoutX="269.0" layoutY="140.0" mnemonicParsing="false" onAction="#toBook" text="Book" />
       <Button layoutX="393.0" layoutY="140.0" mnemonicParsing="false" onAction="#toCar" text="Car" />
-      <Button layoutX="145.0" layoutY="188.0" mnemonicParsing="false" onAction="#toController" text="Controller" />
+      <Button layoutX="145.0" layoutY="188.0" mnemonicParsing="false" onAction="#toJoystick" text="Controller" />
       <Button layoutX="269.0" layoutY="188.0" mnemonicParsing="false" onAction="#toLaptop" text="Laptop" />
       <Button layoutX="393.0" layoutY="188.0" mnemonicParsing="false" onAction="#toNotebook" text="Notebook" />
       <Button layoutX="145.0" layoutY="236.0" mnemonicParsing="false" onAction="#toPen" text="Pen" />
       <Button layoutX="269.0" layoutY="236.0" mnemonicParsing="false" onAction="#toShoe" text="Shoe" />
       <Button layoutX="393.0" layoutY="236.0" mnemonicParsing="false" onAction="#toSmartphone" text="Smartphone" />
       <Button layoutX="269.0" layoutY="284.0" mnemonicParsing="false" onAction="#toWatch" text="Watch" />
-      --><Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="68.0" prefHeight="33.0" prefWidth="261.0" text="Classes and Methods in GUI">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="68.0" prefHeight="33.0" prefWidth="261.0" text="Classes and Methods in GUI">
          <font>
             <Font size="16.0" />
          </font>

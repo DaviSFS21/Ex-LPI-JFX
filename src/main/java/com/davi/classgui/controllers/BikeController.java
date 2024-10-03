@@ -26,7 +26,7 @@ public class BikeController {
         choiceType.setValue("MTB");
     }
 
-    public void showInfo(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void showInfo() {
         infoLabel.setText(modelText.getText() + " " + choiceType.getValue() + " " + yearText.getText());
     }
 }
