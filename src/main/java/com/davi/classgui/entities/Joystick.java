@@ -1,9 +1,9 @@
 package com.davi.classgui.entities;
 
-public class Controller {
+public class Joystick {
     String brand, color, consoleName;
 
-    public Controller(String brand, String color, String consoleName) {
+    public Joystick(String brand, String color, String consoleName) {
         this.brand = brand;
         this.color = color;
         this.consoleName = consoleName;
