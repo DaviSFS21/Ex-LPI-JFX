@@ -14,7 +14,7 @@
       <TextField fx:id="pagesText" layoutX="170.0" layoutY="149.0" prefHeight="25.0" prefWidth="93.0" />
       <Label layoutX="63.0" layoutY="103.0" text="Author" />
       <Label layoutX="63.0" layoutY="153.0" text="Number of pages" />
-      <Button fx:id="registerBook" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#showInfo" text="Register book" />
+      <Button fx:id="register" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#showInfo" text="Register book" />
       <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="257.0" prefHeight="76.0" prefWidth="149.0" text="Label" />
    </children>
 </AnchorPane>

@@ -15,7 +15,7 @@ public class CarController {
     @FXML
     Label infoLabel = new Label();
     @FXML
-    Button registerCar;
+    Button register;
 
     public void showInfo() {
         infoLabel.setText(brandText.getText() + " " + modelText.getText() + " " + yearText.getText());

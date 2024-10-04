@@ -6,11 +6,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 
-import java.io.IOException;
-
 public class BikeController {
     @FXML
-    ChoiceBox<String> choiceType = new ChoiceBox<>();
+    ChoiceBox<String> typeChoice = new ChoiceBox<>();
     @FXML
     Label infoLabel = new Label();
     @FXML
@@ -18,15 +16,15 @@ public class BikeController {
     @FXML
     TextField yearText = new TextField();
     @FXML
-    Button registerBike;
+    Button register;
 
     @FXML
     public void initialize() {
-        choiceType.getItems().addAll("MTB", "Speed", "Gravel");
-        choiceType.setValue("MTB");
+        typeChoice.getItems().addAll("MTB", "Speed", "Gravel");
+        typeChoice.setValue("MTB");
     }
 
     public void showInfo() {
-        infoLabel.setText(modelText.getText() + " " + choiceType.getValue() + " " + yearText.getText());
+        infoLabel.setText(modelText.getText() + " " + typeChoice.getValue() + " " + yearText.getText());
     }
 }

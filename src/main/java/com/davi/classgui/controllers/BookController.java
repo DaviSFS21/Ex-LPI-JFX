@@ -16,7 +16,7 @@ public class BookController {
     @FXML
     TextField pagesText = new TextField();
     @FXML
-    Button registerBook;
+    Button register;
     @FXML
     javafx.scene.control.Label infoLabel = new Label();
 
