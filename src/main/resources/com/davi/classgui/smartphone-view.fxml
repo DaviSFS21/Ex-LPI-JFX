@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.davi.classgui.SmartphoneController"
+            fx:controller="com.davi.classgui.controllers.SmartphoneController"
             prefHeight="400.0" prefWidth="600.0">
     <children>
         <Label layoutX="63.0" layoutY="53.0" text="Brand" />
@@ -16,8 +16,9 @@
         <TextField fx:id="modelText" layoutX="114.0" layoutY="99.0" />
         <TextField fx:id="sizeText" layoutX="114.0" layoutY="149.0" />
         <Label layoutX="63.0" layoutY="103.0" text="Model" />
-        <Label layoutX="63.0" layoutY="153.0" text="Year" />
+        <Label layoutX="63.0" layoutY="153.0" text="Size" />
         <Button fx:id="register" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#showInfo" text="Register smartphone" />
+        <Button fx:id="back" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#toMenu" text="Back" />
         <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="257.0" prefHeight="76.0" prefWidth="149.0" text="Label" />
     </children>
 </AnchorPane>

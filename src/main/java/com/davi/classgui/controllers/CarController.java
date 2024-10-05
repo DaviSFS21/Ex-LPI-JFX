@@ -1,9 +1,17 @@
 package com.davi.classgui.controllers;
 
+import com.davi.classgui.entities.Car;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class CarController {
     @FXML
@@ -18,6 +26,18 @@ public class CarController {
     Button register;
 
     public void showInfo() {
-        infoLabel.setText(brandText.getText() + " " + modelText.getText() + " " + yearText.getText());
+        Car car = new Car(brandText.getText(), modelText.getText(), Integer.parseInt(yearText.getText()));
+        infoLabel.setText("Car: " + car);
+    }
+
+    @FXML
+    Button back;
+    public void toMenu(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent bikeView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/menu-view.fxml"));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+
+        stage.setTitle("Main menu");
+        stage.setScene(new Scene(bikeView));
+        stage.show();
     }
 }

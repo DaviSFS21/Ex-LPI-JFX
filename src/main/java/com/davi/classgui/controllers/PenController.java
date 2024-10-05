@@ -1,40 +1,40 @@
 package com.davi.classgui.controllers;
 
-import com.davi.classgui.entities.Bike;
+import com.davi.classgui.entities.Pen;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class BikeController {
+public class PenController {
+    @FXML
+    TextField brandText = new TextField();
+    @FXML
+    TextField colorText = new TextField();
     @FXML
     ChoiceBox<String> typeChoice = new ChoiceBox<>();
     @FXML
-    Label infoLabel = new Label();
-    @FXML
-    TextField modelText = new TextField();
-    @FXML
-    TextField yearText = new TextField();
-    @FXML
     Button register;
+    @FXML
+    javafx.scene.control.Label infoLabel = new Label();
 
     @FXML
     public void initialize() {
-        typeChoice.getItems().addAll("MTB", "Speed", "Gravel");
-        typeChoice.setValue("MTB");
+        typeChoice.getItems().addAll("Ballpoint", "Marker", "Brush");
+        typeChoice.setValue("Ballpoint");
     }
 
     public void showInfo() {
-        Bike bike = new Bike(modelText.getText(), typeChoice.getValue(), Integer.parseInt(yearText.getText()));
-        infoLabel.setText("Bike: " + bike);
+        Pen pen = new Pen(brandText.getText(), colorText.getText(), typeChoice.getValue());
+        infoLabel.setText(pen.toString());
     }
 
     @FXML
@@ -48,3 +48,5 @@ public class BikeController {
         stage.show();
     }
 }
+
+

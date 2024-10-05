@@ -22,4 +22,9 @@ public class Car {
     public void accelerate() { System.out.println("You're accelerating the car!"); }
     public void brake() { System.out.println("You're braking the car!"); }
     public void openDoors() { System.out.println("Doors are open!"); }
+
+    @Override
+    public String toString() {
+        return this.brand + " " + this.model + " " + this.year;
+    }
 }

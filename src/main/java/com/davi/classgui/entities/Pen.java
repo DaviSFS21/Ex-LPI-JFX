@@ -10,8 +10,11 @@ public class Pen {
     }
 
     public void takeCap() { System.out.println("You took the cap off!"); }
-
     public void putCap() { System.out.println("The cap is back in the pen."); }
-
     public void write() { System.out.println("Writing..."); }
+
+    @Override
+    public String toString() {
+        return this.type + " " + this.color + " " + this.brand;
+    }
 }

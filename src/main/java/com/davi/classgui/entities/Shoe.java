@@ -12,4 +12,9 @@ public class Shoe {
     public void wear() { System.out.println("You wore the shoe."); }
     public void store() { System.out.println("You've stored the shoe."); }
     public void clean() { System.out.println("You' cleaned the shoe!"); }
+
+    @Override
+    public String toString() {
+        return this.color + " " + this.brand + " for " + this.type;
+    }
 }

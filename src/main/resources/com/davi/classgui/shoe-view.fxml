@@ -6,15 +6,17 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davi.classgui.ShoeController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.davi.classgui.controllers.ShoeController">
     <children>
         <TextField fx:id="brandText" layoutX="114.0" layoutY="49.0" />
         <TextField fx:id="colorText" layoutX="114.0" layoutY="99.0" />
-      <ChoiceBox fx:id="typeChoice" layoutX="114.0" layoutY="149.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="typeChoice" layoutX="114.0" layoutY="149.0" prefWidth="150.0" />
         <Label layoutX="63.0" layoutY="53.0" text="Brand" />
         <Label layoutX="63.0" layoutY="103.0" text="Color" />
         <Label layoutX="63.0" layoutY="153.0" text="Type" />
         <Button fx:id="register" layoutX="147.0" layoutY="200.0" mnemonicParsing="false" onAction="#showInfo" text="Register shoe" />
+        <Button fx:id="back" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#toMenu" text="Back" />
         <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="257.0" prefHeight="76.0" prefWidth="149.0" text="Label" />
     </children>
 </AnchorPane>

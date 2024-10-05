@@ -12,4 +12,9 @@ public class Laptop {
     public void open() { System.out.println("entities.Laptop opened!"); }
     public void update() { System.out.println("The laptop has been updated!"); }
     public void upgradeRAM() { System.out.println("The laptop's RAM has been upgraded!"); }
+
+    @Override
+    public String toString() {
+        return this.brand + " " + this.model + " - " + this.cpuName;
+    }
 }

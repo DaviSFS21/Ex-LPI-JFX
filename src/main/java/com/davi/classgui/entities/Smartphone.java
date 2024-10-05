@@ -13,4 +13,9 @@ public class Smartphone {
     public void turnOn() { System.out.println("Turning on..."); }
     public void takePhoto() { System.out.println("Taking a photo!"); }
     public void charge() { System.out.println("Charger has been plugged."); }
+
+    @Override
+    public String toString() {
+        return this.size + " " + this.brand + " " + this.model;
+    }
 }

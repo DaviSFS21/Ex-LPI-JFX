@@ -14,6 +14,7 @@
         <Label layoutX="63.0" layoutY="103.0" text="Color" />
         <Label layoutX="63.0" layoutY="153.0" text="Console" />
         <Button fx:id="register" layoutX="138.0" layoutY="200.0" mnemonicParsing="false" onAction="#showInfo" text="Register joystick" />
+        <Button fx:id="back" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#toMenu" text="Back" />
         <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="257.0" prefHeight="76.0" prefWidth="149.0" text="Label" />
     </children>
 </AnchorPane>

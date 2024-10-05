@@ -1,40 +1,33 @@
 package com.davi.classgui.controllers;
 
-import com.davi.classgui.entities.Bike;
+import com.davi.classgui.entities.Smartphone;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class BikeController {
+public class SmartphoneController {
     @FXML
-    ChoiceBox<String> typeChoice = new ChoiceBox<>();
-    @FXML
-    Label infoLabel = new Label();
+    TextField brandText = new TextField();
     @FXML
     TextField modelText = new TextField();
     @FXML
-    TextField yearText = new TextField();
+    TextField sizeText = new TextField();
+    @FXML
+    Label infoLabel = new Label();
     @FXML
     Button register;
 
-    @FXML
-    public void initialize() {
-        typeChoice.getItems().addAll("MTB", "Speed", "Gravel");
-        typeChoice.setValue("MTB");
-    }
-
     public void showInfo() {
-        Bike bike = new Bike(modelText.getText(), typeChoice.getValue(), Integer.parseInt(yearText.getText()));
-        infoLabel.setText("Bike: " + bike);
+        Smartphone smartphone = new Smartphone(brandText.getText(),modelText.getText(),Double.parseDouble(sizeText.getText()));
+        infoLabel.setText(smartphone.toString());
     }
 
     @FXML

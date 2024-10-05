@@ -13,4 +13,9 @@ public class Book {
     public void open() { System.out.println("You opened the book!"); }
     public void nextPage() { System.out.println("You've reached the next page."); }
     public void previousPage() { System.out.println("You've reached the previous page."); }
+
+    @Override
+    public String toString() {
+        return this.title + " - " + this.author + " / Pages: " + this.numberOfPages;
+    }
 }

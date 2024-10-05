@@ -12,4 +12,9 @@ public class Joystick {
     public void turnOn() { System.out.println("The controller is now on!"); }
     public void changeBattery() { System.out.println("You've changed the battery!"); }
     public void pressStart() { System.out.println("Start button pressed!"); }
+
+    @Override
+    public String toString() {
+        return this.color + " " + this.brand + " Joystick - " + this.consoleName;
+    }
 }

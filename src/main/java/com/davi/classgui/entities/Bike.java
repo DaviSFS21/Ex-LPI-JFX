@@ -22,4 +22,9 @@ public class Bike {
     public void ride() { System.out.println("You're riding the bike!"); }
     public void stop() { System.out.println("You're stopping!"); }
     public void changeTires() { System.out.println("Tires are changed!"); }
+
+    @Override
+    public String toString() {
+        return this.model + " " + this.type + " " + this.year;
+    }
 }

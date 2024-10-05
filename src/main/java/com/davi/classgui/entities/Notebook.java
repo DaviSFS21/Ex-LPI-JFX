@@ -16,4 +16,9 @@ public class Notebook {
         numberOfPages--;
         System.out.printf("A page has been removed!%n%nNow, the book has $d pages.");
     }
+
+    @Override
+    public String toString() {
+        return this.color + " " + this.brand + " with " + this.numberOfPages + " pages";
+    }
 }

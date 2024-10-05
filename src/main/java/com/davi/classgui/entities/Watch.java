@@ -12,4 +12,9 @@ public class Watch {
     public void adjustTime() { System.out.println("You've adjusted the time!"); }
     public void startTimer() { System.out.println("Timer running..."); }
     public void stopTimer() { System.out.println("Timer stopped!"); }
+
+    @Override
+    public String toString() {
+        return this.type + " " + this.brand + " " + this.model;
+    }
 }

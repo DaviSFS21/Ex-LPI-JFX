@@ -6,15 +6,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.davi.classgui.LaptopController">
+            fx:controller="com.davi.classgui.controllers.LaptopController">
     <children>
         <Label layoutX="63.0" layoutY="53.0" text="Brand" />
         <TextField fx:id="brandText" layoutX="114.0" layoutY="49.0" />
         <TextField fx:id="modelText" layoutX="114.0" layoutY="99.0" />
-        <TextField fx:id="yearText" layoutX="114.0" layoutY="149.0" />
+        <TextField fx:id="cpuText" layoutX="114.0" layoutY="149.0" />
         <Label layoutX="63.0" layoutY="103.0" text="Model" />
         <Label layoutX="63.0" layoutY="153.0" text="CPU" />
         <Button fx:id="register" layoutX="140.0" layoutY="200.0" mnemonicParsing="false" onAction="#showInfo" text="Register laptop" />
+        <Button fx:id="back" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#toMenu" text="Back" />
         <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="257.0" prefHeight="76.0" prefWidth="149.0" text="Label" />
     </children>
 </AnchorPane>
