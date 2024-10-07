@@ -1,6 +1,5 @@
 package com.davi.classgui.controllers;
 
-import com.davi.classgui.entities.Car;
 import com.davi.classgui.entities.Joystick;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +18,7 @@ public class JoystickController {
     @FXML
     TextField brandText = new TextField();
     @FXML
-    TextField modelText = new TextField();
+    TextField colorText = new TextField();
     @FXML
     TextField consoleText = new TextField();
     @FXML
@@ -28,7 +27,7 @@ public class JoystickController {
     Button register;
 
     public void showInfo() {
-        Joystick joystick = new Joystick(brandText.getText(), modelText.getText(), consoleText.getText());
+        Joystick joystick = new Joystick(brandText.getText(), colorText.getText(), consoleText.getText());
         infoLabel.setText(joystick.toString());
     }
 

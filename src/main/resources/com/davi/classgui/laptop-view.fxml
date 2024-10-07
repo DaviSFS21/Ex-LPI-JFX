@@ -1,21 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.davi.classgui.controllers.LaptopController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+prefHeight="400.0" prefWidth="600.0"
+xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/"
+fx:controller="com.davi.classgui.controllers.LaptopController">
     <children>
-        <Label layoutX="63.0" layoutY="53.0" text="Brand" />
-        <TextField fx:id="brandText" layoutX="114.0" layoutY="49.0" />
-        <TextField fx:id="modelText" layoutX="114.0" layoutY="99.0" />
-        <TextField fx:id="cpuText" layoutX="114.0" layoutY="149.0" />
-        <Label layoutX="63.0" layoutY="103.0" text="Model" />
-        <Label layoutX="63.0" layoutY="153.0" text="CPU" />
-        <Button fx:id="register" layoutX="140.0" layoutY="200.0" mnemonicParsing="false" onAction="#showInfo" text="Register laptop" />
-        <Button fx:id="back" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#toMenu" text="Back" />
-        <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="257.0" prefHeight="76.0" prefWidth="149.0" text="Label" />
+        <Label text="Brand">
+            <VBox.margin>
+                <Insets bottom="20.0" left="60.0" right="60.0" top="40.0" />
+            </VBox.margin>
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="brandText">
+            <VBox.margin>
+                <Insets bottom="20.0" left="60.0" right="60.0" />
+            </VBox.margin>
+        </TextField>
+        <Label text="Model">
+            <VBox.margin>
+                <Insets bottom="20.0" left="60.0" right="60.0" />
+            </VBox.margin>
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="modelText">
+            <VBox.margin>
+                <Insets bottom="20.0" left="60.0" right="60.0" />
+            </VBox.margin>
+        </TextField>
+        <Label text="CPU">
+            <VBox.margin>
+                <Insets bottom="20.0" left="60.0" right="60.0" />
+            </VBox.margin>
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="cpuText">
+            <VBox.margin>
+                <Insets bottom="20.0" left="60.0" right="60.0" />
+            </VBox.margin>
+        </TextField>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="register" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#showInfo" text="Register laptop">
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="back" mnemonicParsing="false" onAction="#toMenu" text="Back" />
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </HBox>
+        <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="355.0">
+            <VBox.margin>
+                <Insets bottom="20.0" top="20.0" />
+            </VBox.margin>
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
     </children>
-</AnchorPane>
+</VBox>
