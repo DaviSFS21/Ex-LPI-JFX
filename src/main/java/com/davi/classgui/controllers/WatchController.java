@@ -39,11 +39,11 @@ public class WatchController {
     @FXML
     Button back;
     public void toMenu(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent bikeView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/menu-view.fxml")));
+        Parent menuView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/menu-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Main menu");
-        stage.setScene(new Scene(bikeView));
+        stage.setScene(new Scene(menuView));
         stage.show();
     }
 }

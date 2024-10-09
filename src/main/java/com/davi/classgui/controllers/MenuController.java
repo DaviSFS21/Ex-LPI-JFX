@@ -6,13 +6,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.util.Objects;
 
 public class MenuController {
 
     public void toBike(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent bikeView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/bike-view.fxml"));
+        Parent bikeView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/bike-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Bike Class");
@@ -21,7 +21,7 @@ public class MenuController {
     }
 
     public void toBook(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent bookView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/book-view.fxml"));
+        Parent bookView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/book-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Book Class");
@@ -30,7 +30,7 @@ public class MenuController {
     }
 
     public void toCar(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent carView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/car-view.fxml"));
+        Parent carView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/car-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Car Class");
@@ -39,7 +39,7 @@ public class MenuController {
     }
 
     public void toJoystick(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent joystickView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/joystick-view.fxml"));
+        Parent joystickView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/joystick-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Joystick Class");
@@ -48,7 +48,7 @@ public class MenuController {
     }
 
     public void toLaptop(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent laptopView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/laptop-view.fxml"));
+        Parent laptopView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/laptop-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Laptop Class");
@@ -57,7 +57,7 @@ public class MenuController {
     }
 
     public void toNotebook(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent notebookView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/notebook-view.fxml"));
+        Parent notebookView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/notebook-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Notebook Class");
@@ -66,7 +66,7 @@ public class MenuController {
     }
 
     public void toPen(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent penView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/pen-view.fxml"));
+        Parent penView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/pen-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Pen Class");
@@ -75,7 +75,7 @@ public class MenuController {
     }
 
     public void toShoe(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent shoeView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/shoe-view.fxml"));
+        Parent shoeView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/shoe-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Shoe Class");
@@ -84,7 +84,7 @@ public class MenuController {
     }
 
     public void toSmartphone(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent smartphoneView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/smartphone-view.fxml"));
+        Parent smartphoneView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/smartphone-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Smartphone Class");
@@ -93,7 +93,7 @@ public class MenuController {
     }
 
     public void toWatch(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent watchView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/watch-view.fxml"));
+        Parent watchView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/watch-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Watch Class");

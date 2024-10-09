@@ -11,8 +11,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-import java.awt.*;
 import java.io.IOException;
+import java.util.Objects;
 
 public class BookController {
     @FXML
@@ -34,11 +34,11 @@ public class BookController {
     @FXML
     Button back;
     public void toMenu(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent bikeView = FXMLLoader.load(getClass().getResource("/com/davi/classgui/menu-view.fxml"));
+        Parent menuView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/davi/classgui/menu-view.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         stage.setTitle("Main menu");
-        stage.setScene(new Scene(bikeView));
+        stage.setScene(new Scene(menuView));
         stage.show();
     }
 }
