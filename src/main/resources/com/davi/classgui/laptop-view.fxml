@@ -64,6 +64,16 @@ fx:controller="com.davi.classgui.controllers.LaptopController">
                 <Insets />
             </VBox.margin>
         </HBox>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="m1" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#m1" text="Upgrade RAM">
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="m2" mnemonicParsing="false" onAction="#m2" text="Update" />
+            </children>
+        </HBox>
         <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="355.0">
             <VBox.margin>
                 <Insets bottom="20.0" top="20.0" />
