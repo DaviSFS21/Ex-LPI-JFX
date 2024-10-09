@@ -19,9 +19,9 @@ public class Bike {
     public int getYear() { return year; }
     public void setYear(int year) { this.year = year; }
 
-    public void ride() { System.out.println("You're riding the bike!"); }
-    public void stop() { System.out.println("You're stopping!"); }
-    public void changeTires() { System.out.println("Tires are changed!"); }
+    public String ride() { return "You're riding the bike!"; }
+    public String stop() { return "You're stopping!"; }
+    public String changeTires() { return "You're changing tires!"; }
 
     @Override
     public String toString() {

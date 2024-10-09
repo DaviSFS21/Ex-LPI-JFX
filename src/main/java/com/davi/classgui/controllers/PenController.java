@@ -26,6 +26,10 @@ public class PenController {
     Button register;
     @FXML
     javafx.scene.control.Label infoLabel = new Label();
+    @FXML
+    Button m1;
+    @FXML
+    Button m2;
 
     @FXML
     public void initialize() {
@@ -36,6 +40,16 @@ public class PenController {
     public void showInfo() {
         Pen pen = new Pen(brandText.getText(), colorText.getText(), typeChoice.getValue());
         infoLabel.setText(pen.toString());
+    }
+
+    public void m1() {
+        Pen pen = new Pen(brandText.getText(), colorText.getText(), typeChoice.getValue());
+        infoLabel.setText(pen.write());
+    }
+
+    public void m2() {
+        Pen pen = new Pen(brandText.getText(), colorText.getText(), typeChoice.getValue());
+        infoLabel.setText(pen.putCap());
     }
 
     @FXML

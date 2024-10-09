@@ -9,9 +9,9 @@ public class Pen {
         this.type = type;
     }
 
-    public void takeCap() { System.out.println("You took the cap off!"); }
-    public void putCap() { System.out.println("The cap is back in the pen."); }
-    public void write() { System.out.println("Writing..."); }
+    public String takeCap() { return "You took the cap off!"; }
+    public String putCap() { return "The cap is back in the pen."; }
+    public String write() { return "Writing..."; }
 
     @Override
     public String toString() {

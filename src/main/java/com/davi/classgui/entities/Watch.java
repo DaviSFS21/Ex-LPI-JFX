@@ -9,9 +9,9 @@ public class Watch {
         this.type = type;
     }
 
-    public void adjustTime() { System.out.println("You've adjusted the time!"); }
-    public void startTimer() { System.out.println("Timer running..."); }
-    public void stopTimer() { System.out.println("Timer stopped!"); }
+    public String adjustTime() { return "You've adjusted the time!"; }
+    public String startTimer() { return "Timer running..."; }
+    public String stopTimer() { return "Timer stopped!"; }
 
     @Override
     public String toString() {

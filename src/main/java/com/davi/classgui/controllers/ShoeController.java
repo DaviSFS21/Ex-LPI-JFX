@@ -26,6 +26,10 @@ public class ShoeController {
     Label infoLabel = new Label();
     @FXML
     Button register;
+    @FXML
+    Button m1;
+    @FXML
+    Button m2;
 
     public void initialize() {
         typeChoice.getItems().addAll("Casual","Running","Basketball");
@@ -34,6 +38,16 @@ public class ShoeController {
     public void showInfo() {
         Shoe shoe = new Shoe(brandText.getText(), colorText.getText(), typeChoice.getValue());
         infoLabel.setText(shoe.toString());
+    }
+
+    public void m1() {
+        Shoe shoe = new Shoe(brandText.getText(), colorText.getText(), typeChoice.getValue());
+        infoLabel.setText(shoe.wear());
+    }
+
+    public void m2() {
+        Shoe shoe = new Shoe(brandText.getText(), colorText.getText(), typeChoice.getValue());
+        infoLabel.setText(shoe.store());
     }
 
     @FXML

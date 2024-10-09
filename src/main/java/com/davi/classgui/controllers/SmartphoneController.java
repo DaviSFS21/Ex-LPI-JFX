@@ -25,10 +25,24 @@ public class SmartphoneController {
     Label infoLabel = new Label();
     @FXML
     Button register;
+    @FXML
+    Button m1;
+    @FXML
+    Button m2;
 
     public void showInfo() {
         Smartphone smartphone = new Smartphone(brandText.getText(),modelText.getText(),Double.parseDouble(sizeText.getText()));
         infoLabel.setText(smartphone.toString());
+    }
+
+    public void m1() {
+        Smartphone smartphone = new Smartphone(brandText.getText(),modelText.getText(),Double.parseDouble(sizeText.getText()));
+        infoLabel.setText(smartphone.charge());
+    }
+
+    public void m2() {
+        Smartphone smartphone = new Smartphone(brandText.getText(),modelText.getText(),Double.parseDouble(sizeText.getText()));
+        infoLabel.setText(smartphone.takePhoto());
     }
 
     @FXML

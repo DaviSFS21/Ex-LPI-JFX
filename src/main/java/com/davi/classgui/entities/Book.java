@@ -10,9 +10,9 @@ public class Book {
         this.numberOfPages = numberOfPages;
     }
 
-    public void open() { System.out.println("You opened the book!"); }
-    public void nextPage() { System.out.println("You've reached the next page."); }
-    public void previousPage() { System.out.println("You've reached the previous page."); }
+    public String open() { return "You opened the book!"; }
+    public String nextPage() { return "You've reached the next page."; }
+    public String previousPage() { return "You've reached the previous page."; }
 
     @Override
     public String toString() {

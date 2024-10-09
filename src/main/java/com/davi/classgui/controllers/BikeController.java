@@ -26,6 +26,10 @@ public class BikeController {
     TextField yearText = new TextField();
     @FXML
     Button register;
+    @FXML
+    Button m1;
+    @FXML
+    Button m2;
 
     @FXML
     public void initialize() {
@@ -36,6 +40,16 @@ public class BikeController {
     public void showInfo() {
         Bike bike = new Bike(modelText.getText(), typeChoice.getValue(), Integer.parseInt(yearText.getText()));
         infoLabel.setText("Bike: " + bike);
+    }
+
+    public void ride() {
+        Bike bike = new Bike(modelText.getText(), typeChoice.getValue(), Integer.parseInt(yearText.getText()));
+        infoLabel.setText(bike.ride());
+    }
+
+    public void stop() {
+        Bike bike = new Bike(modelText.getText(), typeChoice.getValue(), Integer.parseInt(yearText.getText()));
+        infoLabel.setText(bike.stop());
     }
 
     @FXML

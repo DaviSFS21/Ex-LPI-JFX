@@ -31,6 +31,16 @@ public class JoystickController {
         infoLabel.setText(joystick.toString());
     }
 
+    public void m1() {
+        Joystick joystick = new Joystick(brandText.getText(), colorText.getText(), consoleText.getText());
+        infoLabel.setText(joystick.pressStart());
+    }
+
+    public void m2() {
+        Joystick joystick = new Joystick(brandText.getText(), colorText.getText(), consoleText.getText());
+        infoLabel.setText(joystick.changeBattery());
+    }
+
     @FXML
     Button back;
     public void toMenu(javafx.event.ActionEvent actionEvent) throws IOException {

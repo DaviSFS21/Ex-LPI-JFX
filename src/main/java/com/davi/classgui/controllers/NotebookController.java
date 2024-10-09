@@ -25,10 +25,24 @@ public class NotebookController {
     Button register;
     @FXML
     javafx.scene.control.Label infoLabel = new Label();
+    @FXML
+    Button m1;
+    @FXML
+    Button m2;
 
     public void showInfo() {
         Notebook notebook = new Notebook(brandText.getText(),colorText.getText(),Integer.parseInt(pagesText.getText()));
         infoLabel.setText(notebook.toString());
+    }
+
+    public void m1() {
+        Notebook notebook = new Notebook(brandText.getText(),colorText.getText(),Integer.parseInt(pagesText.getText()));
+        infoLabel.setText(notebook.removePage());
+    }
+
+    public void m2() {
+        Notebook notebook = new Notebook(brandText.getText(),colorText.getText(),Integer.parseInt(pagesText.getText()));
+        infoLabel.setText(notebook.open());
     }
 
     @FXML

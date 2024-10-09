@@ -10,9 +10,9 @@ public class Smartphone {
         this.size = size;
     }
 
-    public void turnOn() { System.out.println("Turning on..."); }
-    public void takePhoto() { System.out.println("Taking a photo!"); }
-    public void charge() { System.out.println("Charger has been plugged."); }
+    public String turnOn() { return "Turning on..."; }
+    public String takePhoto() { return "Taking a photo!"; }
+    public String charge() { return "Charger has been plugged."; }
 
     @Override
     public String toString() {

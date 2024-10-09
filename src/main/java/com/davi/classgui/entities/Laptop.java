@@ -9,9 +9,9 @@ public class Laptop {
         this.cpuName = cpuName;
     }
 
-    public void open() { System.out.println("entities.Laptop opened!"); }
-    public void update() { System.out.println("The laptop has been updated!"); }
-    public void upgradeRAM() { System.out.println("The laptop's RAM has been upgraded!"); }
+    public String open() { return "entities.Laptop opened!"; }
+    public String update() { return "The laptop has been updated!"; }
+    public String upgradeRAM() { return "The laptop's RAM has been upgraded!"; }
 
     @Override
     public String toString() {

@@ -10,11 +10,11 @@ public class Notebook {
         this.numberOfPages = numberOfPages;
     }
 
-    public void open() { System.out.println("Opening the notebook..."); }
-    public void close() { System.out.println("Closing the notebook..."); }
-    public void removePage() {
+    public String open() { return "Opening the notebook..."; }
+    public String close() { return "Closing the notebook..."; }
+    public String removePage() {
         numberOfPages--;
-        System.out.printf("A page has been removed!%n%nNow, the book has $d pages.");
+        return "A page has been removed! Now, the book has " + numberOfPages + " pages.";
     }
 
     @Override

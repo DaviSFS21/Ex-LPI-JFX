@@ -19,9 +19,9 @@ public class Car {
     public int getYear() { return year; }
     public void setYear(int year) { this.year = year; }
 
-    public void accelerate() { System.out.println("You're accelerating the car!"); }
-    public void brake() { System.out.println("You're braking the car!"); }
-    public void openDoors() { System.out.println("Doors are open!"); }
+    public String accelerate() { return "You're accelerating the car!"; }
+    public String brake() { return "You're braking the car!"; }
+    public String openDoors() { return "Doors are open!"; }
 
     @Override
     public String toString() {

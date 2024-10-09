@@ -31,6 +31,16 @@ public class LaptopController {
         infoLabel.setText(laptop.toString());
     }
 
+    public void m1() {
+        Laptop laptop = new Laptop(brandText.getText(), modelText.getText(), cpuText.getText());
+        infoLabel.setText(laptop.upgradeRAM());
+    }
+
+    public void m2() {
+        Laptop laptop = new Laptop(brandText.getText(), modelText.getText(), cpuText.getText());
+        infoLabel.setText(laptop.update());
+    }
+
     @FXML
     Button back;
     public void toMenu(javafx.event.ActionEvent actionEvent) throws IOException {

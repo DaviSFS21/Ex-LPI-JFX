@@ -25,10 +25,24 @@ public class BookController {
     Button register;
     @FXML
     javafx.scene.control.Label infoLabel = new Label();
+    @FXML
+    Button m1;
+    @FXML
+    Button m2;
 
     public void showInfo() {
         Book book = new Book(titleText.getText(), authorText.getText(), Integer.parseInt(pagesText.getText()));
         infoLabel.setText("Book" + book);
+    }
+
+    public void m1() {
+        Book book = new Book(titleText.getText(), authorText.getText(), Integer.parseInt(pagesText.getText()));
+        infoLabel.setText(book.nextPage());
+    }
+
+    public void m2() {
+        Book book = new Book(titleText.getText(), authorText.getText(), Integer.parseInt(pagesText.getText()));
+        infoLabel.setText(book.previousPage());
     }
 
     @FXML

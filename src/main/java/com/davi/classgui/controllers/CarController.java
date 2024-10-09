@@ -31,6 +31,16 @@ public class CarController {
         infoLabel.setText("Car: " + car);
     }
 
+    public void m1() {
+        Car car = new Car(brandText.getText(), modelText.getText(), Integer.parseInt(yearText.getText()));
+        infoLabel.setText(car.accelerate());
+    }
+
+    public void m2() {
+        Car car = new Car(brandText.getText(), modelText.getText(), Integer.parseInt(yearText.getText()));
+        infoLabel.setText(car.brake());
+    }
+
     @FXML
     Button back;
     public void toMenu(javafx.event.ActionEvent actionEvent) throws IOException {

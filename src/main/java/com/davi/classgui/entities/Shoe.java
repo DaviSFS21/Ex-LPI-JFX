@@ -9,9 +9,9 @@ public class Shoe {
         this.type = type;
     }
 
-    public void wear() { System.out.println("You wore the shoe."); }
-    public void store() { System.out.println("You've stored the shoe."); }
-    public void clean() { System.out.println("You' cleaned the shoe!"); }
+    public String wear() { return "You wore the shoe."; }
+    public String store() { return "You've stored the shoe."; }
+    public String clean() { return "You' cleaned the shoe!"; }
 
     @Override
     public String toString() {

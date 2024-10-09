@@ -26,6 +26,10 @@ public class WatchController {
     Label infoLabel = new Label();
     @FXML
     Button register;
+    @FXML
+    Button m1;
+    @FXML
+    Button m2;
 
     public void initialize() {
         typeChoice.getItems().addAll("Digital","Analogic","Fitness tracker");
@@ -34,6 +38,16 @@ public class WatchController {
     public void showInfo() {
         Watch watch = new Watch(brandText.getText(), modelText.getText(), typeChoice.getValue());
         infoLabel.setText(watch.toString());
+    }
+
+    public void m1() {
+        Watch watch = new Watch(brandText.getText(), modelText.getText(), typeChoice.getValue());
+        infoLabel.setText(watch.startTimer());
+    }
+
+    public void m2() {
+        Watch watch = new Watch(brandText.getText(), modelText.getText(), typeChoice.getValue());
+        infoLabel.setText(watch.stopTimer());
     }
 
     @FXML
